@@ -1,0 +1,131 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --padding:10px;
+    --cursor: pointer;
+}
+body {
+    background-image: url(../img/pattern-background-desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.parent {
+    width: 450px;
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    background-color: #eee;
+    border-radius: 20px;
+}
+h1 {
+    text-align: center;
+}
+img {
+   border-radius: 20px 20px 0 0;
+}
+
+.parent p {
+    margin: 0 15% 30px;
+    text-align: center ;
+    opacity: 0.5;  
+    line-height: 1.5;
+}
+.flex-1 {
+    display: flex;
+    width: 150px;
+    justify-content: space-between;
+}
+.cost div:first-child {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.cost div:last-child {
+    opacity: 0.5;
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:0 13% 20px;
+    background-color: #d1c8c845;
+    padding: var(--padding);
+    border-radius: 10px;
+}
+a {
+  text-decoration: none;
+}
+button:first-of-type {
+    text-align: center;
+    width: 333px;
+    background-color: blue;
+    padding: var(--padding);
+    border-radius: 10px;
+    margin:0 13% 10px;
+    color: white;
+    border: none;
+    cursor: var(--cursor);
+
+}
+button:last-of-type {
+    text-align: center;
+    width: 333px;
+    padding: var(--padding);
+    border-radius: 10px;
+    margin:0 13% 20px;
+    border: none;
+    cursor: var(--cursor);
+    background-color: transparent;
+    font-weight:800;
+}
+@media (max-width: 500px) {
+    body {
+        background-image: url(../img/pattern-background-mobile.svg);
+    }
+    .parent {
+        width: 300px;
+    }
+    
+    .parent p {
+        margin: 0 11% 30px;
+        font-size: 13px; 
+    }
+    img {
+        width: 300px;
+     }
+     h1 {
+         font-size: 15px;
+         font-weight: 800;
+    }
+     .cost div:first-child {
+        font-weight:800;
+        font-size: 13px;
+    }
+    .cost div:last-child {
+        font-size: 13px;
+    }
+    a {
+        font-size: 13px;
+      }
+      .flex {
+         margin:0 8% 20px;
+       }
+    .flex-1 img {
+        width:50px
+    }
+    button:first-of-type {
+        width: 240px;
+        margin:0 10% 10px;
+        padding: 15px;
+    
+    }
+    button:last-of-type {
+         width: 220px ;
+         margin:0 10% 20px;
+    }
+}
